@@ -1,0 +1,27 @@
+{% extends "events_layout.njk" %}
+
+{% block edesc %}Ecowhizz. Quiz.{% endblock %}
+{% block title %}YESM 2020 | Ecowhizz{% endblock %}
+
+{% block econtent %}
+    {% import 'macros/event_text.njk' as et %}
+    <div style="font-size:65px;font-family:ariel"><br>ECOWHIZZ</div>
+    <h2>Quiz</h2>
+    <p>Do you have knowledge as deep as the ocean and as wide as the world? Would you like to put your learning and presence of mind to test? Are you motivated to face the questions to the answers that you already have? If your answer is yes, then this is the event for you!</p>
+    <p>If Google is as useful to you as a history book to a scientist, if you have an eye for small details, if you have an unquenchable thirst for knowledge and you are proud of being the live encyclopedia among your peers then here's the chance to flaunt your quizzing acumen.</p>
+    <p>Team YESM is proud to present our event Ecowhizz.</p>
+    {{ et.gen_h3("Abput:") }}
+    <p> A amalgamated quiz with questions related to economics, business and finance.</p>
+    {{ et.gen_h3("Open to:") }}
+    <p>Everybody aged 25 or below (born on or after 7th January 1994), including school and college students.</p>
+    {{ et.gen_h3("Format:") }}
+    <p>Written prelims. 8 teams qualify to the finals. Bounce and pounce to be followed in the finals.</p>
+    {{ et.gen_h3("Rules:") }}
+    {{ et.gen_ul([
+        "Two members per team.",
+        "Lone wolves allowed.",
+        "Cross college and cross department teams are allowed."
+    ]) }}
+    <p>Participants are requested to carry valid proof of age.</p>
+    {{ et.gen_btn("https://docs.google.com/forms/d/e/1FAIpQLSfP7LUhWJxQJMUYB06aH-yjY9UaFQIZAPKKOsKXSF5Hjmegew/viewform?vc=0&c=0&w=1&fbclid=IwAR284-jRogbjiQEXTX6XdoPYmJTNdKhGQF9ur70p68V1ILNji9b-op-5MYw") }}
+{% endblock %}

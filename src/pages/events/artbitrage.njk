@@ -1,0 +1,38 @@
+{% extends "events_layout.njk" %}
+
+{% block edesc %}ARTbitrage. Poster making and Doodling{% endblock %}
+{% block title %}YESM 2020 | ARTbitrage{% endblock %}
+
+{% block econtent %}
+    {% import 'macros/event_text.njk' as et %}
+    <div style="font-size:65px;font-family:ariel"><br>ARTBITRAGE</div>
+    <h2>Charcoal Sketching, T-Shirt painting &amp; Face painting</h2>
+    <p>The arts are a great vehicle for creativity —every living and breathing being deeply desires a world filled with joy and beauty. This world would allow for an overflow in the diversity of creative expression and the uniqueness of the human spirit. It has the power of bending what people think of a straight line.</p>
+    {{ et.gen_h3("Charcoal Sketching:") }}
+    {{ et.gen_ul([
+        "Individual participation is allowed only.",
+        "Every participant is required to bring their own Charcoal pencils and other art materials as per their requirement,to be kept at the responsibility of the participant.<br>We shall not be answerable for loss of any personal belongings.",
+        "One sheet will be provided to each participant.<br>No extra sheets shall be provided.",
+        "Usage of mobile phones on spot during the event is strictly prohibited."
+    ]) }}
+    <p>Theme:<b> "The Fate of the Forest"</b></p>
+    {{ et.gen_h3("T-Shirt painting:") }}
+    <ol class="event_desc--list">
+        <li>A maximum of 3 members are allowed in each group.</li>
+        <li>One white T-Shirt shall be provided to each group before the start of the event.<br>No extra T-shirt shall be provided henceforth.</li>
+        <li>Participants in a group are required to bring their own Poster,Fabric colours and paintbrushes,and palettes.</li>
+        <li>Usage of mobile phones are strictly prohibited during the event.</li>
+    </ol>
+    <p>Theme : <b>"Aquamarine-Life Below Water"</b></p>
+    {{ et.gen_h3("Face painting:") }}
+    {{ et.gen_ul([
+        "A maximum of two members are allowed in each group.",
+        "All colours,paintbrushes and other material are to be brought by the participants themselves.",
+        "No usage of phones will be allowed during the event.",
+        "Participants are requested to apply safe and washable colours for Face painting."
+    ]) }}
+    <p>Theme : <b>"The self-nurtured Apocalypse"</b></p>
+    <br>
+    <p>In case of any accusation of strong plagiarism,the defecting team shall be disqualified.</p>
+    {{ et.gen_btn("https://docs.google.com/forms/d/e/1FAIpQLSepcq771y6zK-LHORVR5Gl2lYrlC6SkQJKABjmyttAGShWc_w/viewform?vc=0&c=0&w=1&fbclid=IwAR39Kl1OKJRPVlEDNKdmJ6mFRszpbchG6MK3rwS9y7NbXodypuzkZCGE1hk") }}
+{% endblock %}

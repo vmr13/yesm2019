@@ -1,0 +1,26 @@
+{% extends "events_layout.njk" %}
+
+{% block edesc %}Bulls and Bears. Mock stock market.{% endblock %}
+{% block title %}YESM 2019 | Bulls and Bears{% endblock %}
+
+{% block econtent %}
+    {% import 'macros/event_text.njk' as et %}
+    {{ et.gen_htext("bandb", "107.4", "15.6") }}
+    <h1 class="d_none">Bulls and Bears</h1>
+    <h2>Mock Stock</h2>
+    <p>In a world, where simultaneously there exists the skeptics crediting all market movements to the ‘animal spirits’ of investors, and the ‘expertise’ of formally trained stock brokers, can a bunch of undergrads know the market well enough to predict how it moves? If you think you can, then this January we will be providing you the platform to prove your mettle, in an all new event in this edition of YESM.</p>
+    {{ et.gen_h3("Format:") }}
+    <p>The event will be taking place via an online virtual trading platform. It will be a stock trading simulation, where the participants will be given a stipulated starting amount. Participants will be competing to turn over the maximum amount of profit in a certain time frame.</p>
+    {{ et.gen_h3("Eligibility:") }}
+    <p>All participants must be enrolled in a bachelor’s or master’s course (UG or PG). Even though it is an online event, identification will be checked for all participants.</p>
+    {{ et.gen_h3("General rules:") }}
+    {{ et.gen_ul([
+        "The teams will be given access to the portals, on the evening of the 9 th of January, any time after the market closes for the day. From then, they will be allowed to carry out any trade they want, till the market closes on the evening of the 15 th of January.",
+        "Each team can have a maximum of 2 members. Cross-college teams are allowed.",
+        "This will be an exclusively online event, however the prize distribution ceremony will take place along with every other YESM events’.",
+        "Individuals who want to participate must register by the 5 th of January, 2019.",
+        "All of the specific technical details regarding the trades, starting amount, portal, etc. will be forwarded to the participants at least 2 days before the beginning of the event, to the email id provided by them.",
+        "The coordinators decisions, regarding all aspects of the event, will be final."
+    ]) }}
+    {{ et.gen_btn("https://goo.gl/forms/ABXlaaUb1btrdQsf2") }}
+{% endblock %}

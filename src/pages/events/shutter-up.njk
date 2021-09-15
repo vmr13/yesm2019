@@ -1,0 +1,29 @@
+{% extends "events_layout.njk" %}
+
+{% block edesc %}Shutter Up. Photography.{% endblock %}
+{% block title %}YESM 2019 | Shutter Up{% endblock %}
+
+{% block econtent %}
+    {% import 'macros/event_text.njk' as et %}
+    {{ et.gen_htext("sup","70.8","15.6") }}
+    <h1 class="d_none">Shutter Up</h1>
+    <h2>Photography</h2>
+    <p>Showcase your skills in photojournalism and preserve moments that otherwise would have been forgotten.</p>
+    {{ et.gen_h3("Rules:") }}
+    {{ et.gen_ul([
+        "Teams of 1 or 2 member(s) are allowed.",
+        "Cross-college teams are allowed.",
+        "School students (11 &amp; 12) are allowed to participate but no cross School- college team is allowed.",
+        "Participants are to cover the events of YESM 2019 and will be awarded on the basis of their skills in photojournalism.",
+        "Slots will be given to each team at their convenience.",
+        "Participants must arrive on venue each day before the events start."
+    ]) }}
+    {{ et.gen_h3("Submission Details:") }}
+    {{ et.gen_ul([
+        "At the end of each day, each team are to submit a number of photographs (number to be specified for each day). They will be judged on the basis of these submitted photographs.",
+        "All photographs clicked are to be mailed to <a class=\"underline\" href=\"mailto:submissions@yesm.in\">submissions@yesm.in</a> with the subject “Shutter Up - Photography&quot;. Name(s) of registrant(s) should be clearly mentioned in the mail along with institution name(s)."
+    ]) }}
+    {{ et.gen_h3("Process of Selection:") }}
+    <p>Judge&#39;s Choice Award: All submissions made will be viewed by the judge. Marking is at his/her discretion.</p>
+    {{ et.gen_btn("https://goo.gl/forms/t3VzX2EWjKOm9m9l2") }}
+{% endblock %}

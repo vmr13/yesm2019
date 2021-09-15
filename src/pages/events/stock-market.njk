@@ -1,0 +1,16 @@
+{% extends "events_layout.njk" %}
+
+{% block edesc %}Stock Market Game.{% endblock %}
+{% block title %}YESM 2019 | Stock Market Game{% endblock %}
+
+{% block econtent %}
+    {% import 'macros/event_text.njk' as et %}
+    {{ et.gen_htext("smg","94.5","41") }}
+    <h1 class="d_none">Sacred Gains</h1>
+    <p>The GAFA Stock Market Game is a simulated experience of the stock exchange made with the view of providing students with a glimpse of the fast-paced and dynamic stock markets and also giving them a power-packed experience.</p>
+    <p>This workshop has given students a hands-on experience of trading and has encouraged them to learn the science behind investing in the real world share market. This workshop has been conducted in over 50 schools and colleges across Kolkata and the winners have been accoladed with certificates given by GAFA &amp; NSE Academy.</p>
+    <p>Global Applied Financial Analyst (GAFA) is one of the most sought-after financial analysis programs in India by NSE Academy, a wholly owned subsidiary of The National Stock Exchange, in joint association with EIDOS.</p>
+    <p>Please note that this is a solo-participation event. Registration is open to students from all courses.</p>
+    {{ et.gen_btn("https://goo.gl/forms/jKDOVCVAMNiwRy5s2") }}
+{% endblock %}
+

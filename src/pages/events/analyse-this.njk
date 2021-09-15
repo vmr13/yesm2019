@@ -1,0 +1,28 @@
+{% extends "events_layout.njk" %}
+
+{% block edesc %}Analyse this. Critical Thinking.{% endblock %}
+{% block title %}YESM 2020 | Analyse This{% endblock %}
+
+{% block econtent %}
+    {% import 'macros/event_text.njk' as et %}
+    <div style="font-size:65px;font-family:ariel"><br>ANALYSE THIS</div>
+    <h2>Critical Thinking</h2>
+    <p>This January, "brainy is the new brawny!" No problem is impossible to solve; you just have to be creative enough to find the solution. So bring along your thinking caps, and brush up those ‘little grey cells’. You just need to analyze this!</p>
+    {{ et.gen_h3("General Rules:") }}
+    {{ et.gen_ul([
+        "A maximum of 3 and a minimum of 2 participants will be allowed per team.",
+        "All participants must be enrolled in bachelor's course in the discipline of Economics. (Only UG students are allowed).",
+        "Participants in one team can be from different academic years.",
+        "Cross-College teams are allowed.",
+        "There is no limit to the number of teams participating from a college."
+    ]) }}
+    
+    {{ et.gen_h3("About:") }}
+    <p>The event will be comprised of two rounds.One prelims followed by the final round. The time allocated for the prelims is 25 minutes and the time for the final round will be of 45 minutes.
+<br>
+The rules will be declared on spot.</p>
+    {{ et.gen_h3("Note:") }}
+    <p>Every team is advised to bring at least one scientific calculator.</p>
+
+    {{ et.gen_btn("https://forms.gle/zmh2gs5ncihVo3ty8") }}
+{% endblock %}

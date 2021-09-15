@@ -1,0 +1,23 @@
+{% macro gen_htext(name, vb_w, vb_h) %}
+<div style="max-width: 400px; margin: 2em auto;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" viewBox="0 0 {{ vb_w }} {{ vb_h }}">
+        <use xlink:href="/img/eventnames.svg#{{ name }}" fill="#2d2d2d"/>
+    </svg>
+</div>
+{% endmacro %}
+
+{% macro gen_ul(list) %}
+<ol class="event_desc--list">
+    {% for litem in list %}
+    <li>{{ litem | safe }}</li>
+    {% endfor %}
+</ol>
+{% endmacro %}
+
+{% macro gen_h3(label) %}
+<h3 style="margin-top:2.2em;">{{ label }}</h3>
+{% endmacro %}
+
+{% macro gen_btn(link) %}
+<a class="button" href="{{ link }}" style="margin-top:1em;font-size:1.2em;" target="_blank" rel="noopener">Register</a>
+{% endmacro %}

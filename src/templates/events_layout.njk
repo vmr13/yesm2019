@@ -1,0 +1,19 @@
+{% extends "layout.njk" %}
+
+{% block desc %}{% block edesc %}{% endblock %} Young Economist Students' Meet 2019 (YESM 2019). Venue: Jadavpur University. Department of Economics. Designer: Vedant Mozumdar.{% endblock %}
+
+{% block metahead %}
+    <link rel="stylesheet" href="/css/events.css">
+{% endblock %}
+
+{% block content %}
+<body id="events">
+    {% import 'macros/header.njk' as nav %}
+    {{ nav.gen('e_nest') }}
+    <main>
+        <section class="limit">
+        {% block econtent %}{% endblock %}
+        </section>
+    </main>
+</body>
+{% endblock %}

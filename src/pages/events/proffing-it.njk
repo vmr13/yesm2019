@@ -1,0 +1,31 @@
+{% extends "events_layout.njk" %}
+
+{% block edesc %}Proffing It. Mock Classroom.{% endblock %}
+{% block title %}YESM 2020 | Proffing It{% endblock %}
+
+{% block econtent %}
+    {% import 'macros/event_text.njk' as et %}
+    <div style="font-size:65px;font-family:ariel"><br>PROFFING IT</div>
+    <h2>Mock Classroom</h2>
+    <p>This January, we give you an opportunity to turn the tables, and show the professors what you're made of. Experience what it feels like to be on the other side, and get ready to showcase your teaching talents.</p>
+    {{ et.gen_h3("General rules and regulations:") }}
+    {{ et.gen_ul([
+        "This event is opened only to Undergraduate students majoring in Economics.",
+        "There is no limit on the number of participants from any particular institution.",
+        "A white board, black board, duster and chalks will be provided in both the prelims and the finals.",
+        "No Laptop, no mobile phones, or paper will be allowed while giving the lecture.",
+        "Participants are required to bring their college/University identity proof."
+    ]) }}
+    {{ et.gen_h3("Prelims:") }}
+    {{ et.gen_ul([
+        "Each participant will be mailed 3 topics in advance. The participant will have to choose a topic and deliver a lecture on the same.",
+        "Topics will be allotted a day before the event takes place.",
+        "Each participant will be given 6 min to deliver their lecture after which the participant will be asked questions based on what he/she has taught by the judges and the mock students for 3 min.",
+        "Points will be given based on a variety of factors such as your knowledge on the topic, the decorum of the class, your answers to the questions asked by the judges, how well you handle the questions from your mock students and of course overall presentation."    ]) }}
+    {{ et.gen_h3("Finals:") }}
+    {{ et.gen_ul([
+        "The participant will be given 2 topics after the preliminary round. They will have to choose one of the topics and deliver a lecture on the same on the finals day.",
+        "Each participant will be given 10 min to deliver their lecture after which the participant will be asked questions based on what he/she has taught by the judges and the mock students for 3 min."
+        ]) }}
+    {{ et.gen_btn("https://docs.google.com/forms/d/e/1FAIpQLSdHi4vt95d_d8l7AzFRWS3j8WnBaMXaGw3JR6GY_INTKBr9TA/viewform?fbclid=IwAR21k2n7_rt8u_4t7wyxJpyeo-JF-TO6vwSuy20NMFd4LB7OP7HcCkdzClE") }}
+{% endblock %}

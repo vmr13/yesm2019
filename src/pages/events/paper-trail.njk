@@ -1,0 +1,46 @@
+{% extends "events_layout.njk" %}
+
+{% block edesc %}Paper Trail. Paper presentation.{% endblock %}
+{% block title %}YESM 2020 | Paper Trail{% endblock %}
+
+{% block econtent %}
+    {% import 'macros/event_text.njk' as et %}
+    <div style="font-size:60px;font-family:ariel"><br>PAPER TRAIL</div>
+    <h2>Paper Presentation</h2>
+    <p>The only way to advance forward and improve the existing ways of the world is by thinking, reflecting and innovating. Good ideas can take us a long way, but are only effective when shared with the society.</p>
+    <p>This January, we provide to you an opportunity to do just this. Engage in constructive thinking, exercise your faculties and express your ideas through Paper Trail, our paper presentation event.</p>
+    {{ et.gen_h3("Topics:") }}
+    {{ et.gen_ul([
+        "Migration, Climate Change and the World- Over the past five years, how much of migration do you think has been caused due to environmental factors and non-environmental factors (like job prospects, war, etc.) respectively?",
+        "Transportation, Infrastructure and the City- How are policies regarding infrastructure and public transport affecting changes in people's mobility in cities around the world?"
+    ]) }}
+    {{ et.gen_h3("General Rules:") }}
+    {{ et.gen_ul([
+        "Participants are required to present paper on any one of the given topics which have been given on our facebook page in cohesion with the theme.",
+        "Both UG &amp; PG students are allowed, but a team should be formed entirely of UG students or PG students. Cross UG-PG teams are not allowed. UG &amp; PG teams will be judged seperately.",
+        "However, cross-college teams are allowed.",
+        "Maximum no. of participants : 4"
+    ]) }}
+    <p>The event has been divided into <b>two rounds</b>.</p>
+    {{ et.gen_h3("Round 1: Selection for abstracts / proposals") }}
+    {{ et.gen_ul([
+        "An abstract/ Proposal has to be mailed to us not exceeding 1000 words. The abstracts must contain an indicative bibliography.",
+        "The abstract must throw light about what the objective of the paper is, and must contain a rough idea about how the paper has been planned out and the questions it aspires to answer.",
+        "The abstracts must be submitted before the deadline to the following : email id: events.yesm@gmail.com with subject as: &lt;name of the event&gt;_&lt;topic name&gt;.",
+        "The file name should be as follows Collegename(s).nameofanyoneoftheparticipants.",
+        "The deadline for submission of the abstracts is 5th December, 2019."
+    ]) }}
+    <p>The selected candidates of this round will be notified via e-mail, as well as by our facebook page. The selected candidates are eligible for Round II, the details of which have been given below.</p>
+    {{ et.gen_h3("Round 2: Submission of the main paper by selected candidates.") }}
+    {{ et.gen_ul([
+        "The cover page must include the title of the paper, details of the participants (name, email id, mobile no.). It is mandatory to mention if the paper is to be treated as a UG or a PG entry.",
+        "An abstract of the paper is mandatory. It must not exceed 500 words in the main paper. This should go on the second page. The entire paper should not exceed 5000 words approximately.",
+        "Font: Times New Roman, 12 pt for normal writing, 16 pt for headings, 14 pt for subheadings and 10 pt for footnotes, Line spacing: 2.0.Bold and italic are accepted.",
+        "All diagrams, tables must be self-drawn or taken from a data source. In the latter case, appropriate data source must be mentioned. Both primary and secondary data will be accepted.",
+        "For citing other papers and/or articles, use APA style of referencing. For example: (Lucas, 1988) (Refer <a class=\"underline\" href=\"https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/general_format.html\">this</a>)",
+        "Add footnotes and side notes for all necessary details required. Remember to acknowledge all books / websites / other material consulted during the course of writing your research paper. Failure to do so will amount to plagiarism which is unacceptable.",
+        "The main paper must be submitted by 3rd January, 2020.",
+        "A graphic illustration of the main paper in the form of a PowerPoint Presentation must be submitted by 5th January, 2020."
+    ]) }}
+    {{ et.gen_btn("https://docs.google.com/forms/d/e/1FAIpQLSfjH-4BUTm6XIY2HPiJXdWUfCEdQsXhTYxgdmgQ4C9LB-XxDA/viewform") }}
+{% endblock %}

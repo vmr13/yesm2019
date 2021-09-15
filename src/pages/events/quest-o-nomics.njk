@@ -1,0 +1,27 @@
+{% extends "events_layout.njk" %}
+
+{% block edesc %}Questonomics. Levels' Race.{% endblock %}
+{% block title %}YESM 2020 | Quest-o-nomics{% endblock %}
+
+{% block econtent %}
+    {% import 'macros/event_text.njk' as et %}
+    <div style="font-size:45px;font-family:ariel"><br>QUEST-O-NOMICS</div>
+    <h2>Level's Race</h2>
+    <p>Economics is often perceived to be one monotonous subject. To change your perception, Team YESM, this January, brings to you an amazing event full of fun and frolic, comprising perplexing puzzles, tantalizing teasers, rhymed riddles and more.</p>
+    <p>Each one of us, at some point in our childhood, has read detective adventure stories and felt the rush of adrenaline when the protagonist uses various clues to arrive at his/her conclusion and solve the mystery! Indeed, there is a different level of utility (yes, of course we used this word) in exercising logic, joining threads of clues, deciphering hints and finding the answer.</p>
+    <p>This January, we give you a chance to relive your childhood and put your analytical skills to test, while enjoying each and every moment of this extremely fun treasure hunt event.</p>
+    {{ et.gen_h3("Format:") }}
+    <p>The event consists of four levels. Each level consists of word puzzles, riddles, picture puzzles &amp; logic based questions - all related to Economics.</p>
+    {{ et.gen_h3("Rules:") }}
+    {{ et.gen_ul([
+        "Teams should comprise 2-3 members.",
+        "Only students enrolled in bachelor&#39;s course (UG) shall be allowed to participate.",
+        "Cross-college teams are allowed.",
+        "Teams will be marked on the number of correct answers (in all levels) and time taken to complete all four levels.",
+        "The decision of the moderators/organizers will be final and binding in all respect.",
+        "Participants should carry paper and pen for rough work.",
+        "Further details to be given at the time of the event."
+    ]) }}
+    <p>NOTE: Participants are advised to wear casuals and comfortable shoes.</p>
+    {{ et.gen_btn("https://forms.gle/56Ah52oKAXo654iAA") }}
+{% endblock %}

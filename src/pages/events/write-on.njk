@@ -1,0 +1,34 @@
+{% extends "events_layout.njk" %}
+
+{% block edesc %}Write On. Essay writing.{% endblock %}
+{% block title %}YESM 2020 | Write On{% endblock %}
+
+{% block econtent %}
+    {% import 'macros/event_text.njk' as et %}
+    <div style="font-size:65px;font-family:ariel"><br>WRITE ON</div>
+    <h2>Essay Writing</h2>
+    {{ et.gen_h3("Topics:") }}
+    {{ et.gen_ul([
+        "Green Accounting: Concept, methods, and progress.",
+        "How is climate change affecting the economic development? Is society ready to accept stringent climate friendly policies?",
+        "The government and individuals are spending vast amounts of money protecting animals and their habitat. This money could be better spent dealing with fundamental issues in society such as poverty and health care. To what extent do you agree, if at all?"
+    ]) }}
+    {{ et.gen_h3("Rules:") }}
+    {{ et.gen_ul([
+        "The essay must be an individual work of the author. No collaborations are allowed.",
+        "All participants must be school students at the higher secondary level (classes 11 and 12) or enrolled undergraduate or postgraduate students.",
+        "Participants must write an essay on any one of the given topics.",
+        "There is no limit to the number of participants from a particular institution. However, one participant can submit only one essay. Multiple submissions from the same participant is not allowed."
+    ]) }}
+    {{ et.gen_h3("Essay Format:") }}
+    {{ et.gen_ul([
+        "A word limit of 1500 words must be maintained (including in-text citations but excluding cover - page, footnotes, diagram captions, tables (if any), and end-text citations).",
+        "The first page of the essay page must mention clearly the title of the essay, and details of the participant (name, Email id, mobile no. and name of institution).",
+        "Font: Times New Roman, 12pt, Double-spaced (Line Spacing: 2.0) to be maintained throughout the paper.",
+        "For citing other papers and/or articles, use APA style of referencing."
+    ]) }}
+    {{ et.gen_h3("Submission details:") }}
+    <p>The completed papers must be submitted before the deadline to the following e-mail ID: events.yesm@gmail.com with subject as: WriteOn_YourName. The file name should be as follows InstitutionName-NameOfTheParticipant.</p>
+    <p>NOTE: Participants must send their essays by <b>20th December, 2019</b>.</p>
+    {{ et.gen_btn("https://docs.google.com/forms/d/1evxuLYXBolaxX2t55rYs5Y8k6xa1_ijRKANNqswCBfk/viewform?fbclid=IwAR0g3ur74NwHIdUtZx65eYAdx3ZrKB0hNoZ2sTZL5ZiU7JywVlCG-pDcCiQ&edit_requested=true") }}
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'layout.njk' %}
+
+{% block title %}YESM 2020 | Pay-Off Schedule{% endblock %}
+{% block desc %}Team of YESM. Young Economist Students' Meet 2019 (YESM 2019). Venue: Jadavpur University. Department of Economics. Designer: Vedant Mozumdar.{% endblock %}
+
+{% block metahead %}
+    <link rel="stylesheet" href="css/team.css">
+    <script src="js/team.js"></script>
+{% endblock %}
+
+{% block content %}
+<body id="team">
+    {% import 'macros/header.njk' as nav %}
+    {{ nav.gen('p') }}
+    <main id="main">
+        <section>
+            <h1>Pay-Off Schedule</h1>
+            <div>
+            <img style="width: 75%" src="img/pay-off-schedule.jpg">
+            </div>
+            </section>
+            <section>
+            <p>Here at YESM 2020, we have something new in store for you!<br>
+Every event you participate in, the first,second and third place holders will get <b>20</b>,<b>15</b> and <b>10</b> points respectively. There are points for participation and attending the Panel Discussions/Guest Speaker sessions as well. The points get added against your Institution's name as well. Finally,after all the events of the three days, the individual with the maximum points wins the Young Economist of The Year award and the institution with the maximum score wins the <b>YESM CUP 2020!</b><br>
+So, what are you waiting for? Don't let this opportunity go begging! Come and join us in huge numbers this January!</p>
+        </section>
+</body>
+{% endblock %}

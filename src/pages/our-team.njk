@@ -1,0 +1,59 @@
+{% extends 'layout.njk' %}
+
+{% block title %}YESM 2020 | Our Team{% endblock %}
+{% block desc %}Team of YESM. Young Economist Students' Meet 2019 (YESM 2019). Venue: Jadavpur University. Department of Economics. Designer: Vedant Mozumdar.{% endblock %}
+
+{% block metahead %}
+    <link rel="stylesheet" href="css/team.css">
+    <script src="js/team.js"></script>
+{% endblock %}
+
+{% block content %}
+<body id="team">
+    {% import 'macros/header.njk' as nav %}
+    {{ nav.gen('o') }}
+    <main id="main">
+        <section>
+            <h1>Organising Committee</h1>
+            <div>
+            <img style="width: 75%" src="img/oc2020/signatories.jpg">
+            </div>
+            
+            <div>
+            <img style="width: 75%" src="img/oc2020/editorial.jpg">
+            </div>
+            
+            <div>
+            <img style="width: 75%" src="img/oc2020/events.jpg">
+            </div>
+            
+            <div>
+            <img style="width: 75%" src="img/oc2020/design.jpg">
+            </div>
+            
+            <div>
+            <img style="width: 75%" src="img/oc2020/food.jpg">
+            </div>
+            
+            <div>
+            <img style="width: 75%" src="img/oc2020/pr.jpg">
+            </div>
+            
+            <div>
+            <img style="width: 75%" src="img/oc2020/sponsorship.jpg">
+            </div>
+            
+            <div>
+            <img style="width: 75%" src="img/oc2020/ug-1.jpg">
+            </div>
+            
+            <div>
+            <img style="width: 75%" src="img/oc2020/ug-2.jpg">
+            </div>
+            
+            <div>
+            <img style="width: 75%" src="img/oc2020/ug-3.jpg">
+            </div>
+        </section>
+</body>
+{% endblock %}

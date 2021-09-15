@@ -1,0 +1,53 @@
+{% extends "events_layout.njk" %}
+
+{% block edesc %}Ecolens. Film Making.{% endblock %}
+{% block title %}YESM 2020 | Ecolens{% endblock %}
+
+{% block econtent %}
+    {% import 'macros/event_text.njk' as et %}
+    <div style="font-size:65px;font-family:ariel"><br>ECOLENS</div>
+    <h2>Photography and Short-Film making</h2>
+    <p>YESM 2020 is proud to present ECOLENS. This year, Ecolens has two sub-events, Photography and Short-Film making.</p>
+    <h2 style="text-align:left">Photography</h2>
+    {{ et.gen_h3("Theme:") }}
+    <p>Anthropocene - A geological age defined by the irreversible damage that the society has inflicted upon the environment.</p>
+    
+    {{ et.gen_h3("Rules:") }}
+    {{ et.gen_ul([
+        "Only individual participation is allowed.",
+        "School students(class 11 and 12) and college students are allowed to participate.",
+        "Number of entries - 1",
+        "The photograph has to be mailed to events.yesm@gmail.com with the subject <q>Ecolens - Photography</q>",
+        "The mail body should include name of the participant, institution, contact number and a one line description of the photograph."
+    ]) }}
+        <p>Last date of submission - <b>2nd January, 2020</b>.</p>
+    {{ et.gen_btn("https://forms.gle/vgCUWox3QSwNiVCk8") }}
+
+    
+    <h2 style="text-align:left">Short-Film making</h2>
+    {{ et.gen_h3("Rules:") }}
+    {{ et.gen_ul([
+        "Films should not exceed 10+2 minutes.",
+        "The maximum number of team members is 6 (including the director). Minimum number of team members is 2",
+        "The submission must be under the name of the director.",
+        "School students and cross college teams are allowed.",
+        "Films can be in English/Hindi/Bengali. Participants can use subtitles for better clarity and expression.",
+        "Entries should be original.",
+        "Entries having objectionable content or failing to adhere to the topic will not be accepted."
+    ]) }}
+    {{ et.gen_h3("Topics:") }}
+    {{ et.gen_ul([
+        "Change in people's mobility behavior as a result of public transport and/or Infrastructure facilities.",
+        "Effect of destructive urbanization on the environment."
+    ]) }}
+    <p>Participants are required to make film on any one of the given topics.</p>
+    {{ et.gen_h3("Submission Details:") }}
+    {{ et.gen_ul([
+    "The film should be uploaded to Google Drive and the link should be mailed to events.yesm@gmail.com with the subject <q>Ecolens-Videography</q>",
+        "The name of the participants, contact number and the chosen topic (A or B) should be clearly mentioned in the body of the mail."
+    ]) }}
+    <p>Last date for submission of film: <b>2nd January, 2020</b></p>
+    <br>
+    <p>The best 3 films (as judged prior to YESM'20) will be screened in front of the audience during YESM'20. The date and time will be specified beforehand.</p>
+    {{ et.gen_btn("https://docs.google.com/forms/d/e/1FAIpQLScQ_7RCSKECiggLlcqk29gvFxZ6jsVOG7_SL25IMNiaCt9Qhg/viewform?fbclid=IwAR2JWHtAp7pByGrax3yDaDwO54sJgv0sRKfGIrxDepeoWLFo6HwRo2c-jKQ") }}
+{% endblock %}

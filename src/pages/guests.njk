@@ -1,0 +1,39 @@
+{% extends 'layout.njk' %}
+
+{% block title %}YESM 2020 | Guests{% endblock %}
+{% block desc %}Guests of YESM. Young Economist Students' Meet 2020 (YESM 2020). Venue: Jadavpur University. Department of Economics. Designer: Vedant Mozumdar.{% endblock %}
+
+{% block metahead %}
+    <link rel="stylesheet" href="css/guests.css">
+{% endblock %}
+
+{% block content %}
+<body id="guests">
+    {% import 'macros/header.njk' as nav %}
+    {{ nav.gen('g') }}
+    <main id="main">
+        <section>
+            <h1>Guests</h1>
+            <h2>Interactive Session</h2>
+            <p>Time- 11am <br> Venue- Gandhi Bhavan, Jadavpur University</p>
+            <img src="/img/Guests2020/Dr. Aparna Sawhney.jpg" alt="Prabhat Patnaik">
+        </section>
+        <section>
+            <h2>Panel - 1</h2>
+            <p>Topic- Environmental Protection and Growth: A Policy Dilemma? <br> Time- 7th Jan, 12noon <br> Venue- Gandhi Bhavan, Jadavpur University</p>
+            <img src="/img/Guests2020/Mr Subhas Datta.jpg" alt="Arpita Banerjee">
+            <img src="/img/Guests2020/Dr. Partha Sen.jpg" alt="Pranab Kumar Das">
+            <img src="/img/Guests2020/Dr. Purnamita Dasgupta.jpg" alt="Rajesh Bhattacharya">
+            <img src="/img/Guests2020/Dr. Saudamini Das.jpg" alt="Sreejata Banerjee">
+        </section>
+        <section>
+            <h2>Panel - 2</h2>
+            <p>Topic- Economics of CLean Energy <br> Time- 9th Jan, 11am <br> Venue- Gandhi Bhavan, Jadavpur University</p>
+            <img src="/img/Guests2020/Dr. Anindita Sen.jpg" alt="Amit Dasgupta">
+            <img src="/img/Guests2020/Dr. Meeta K Mehra.jpg" alt="Kumarjit Mandal">
+            <img src="/img/Guests2020/Dr. Rajobroto Banerjee.jpg" alt="Paranjoy">
+            <img src="/img/Guests2020/Dr. Sp gon chaudhury.jpg" alt="Tamal Bandyodhyay">
+        </section>
+    </main>
+</body>
+{% endblock %}

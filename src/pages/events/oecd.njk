@@ -1,0 +1,14 @@
+{% extends "events_layout.njk" %}
+
+{% block edesc %}Committee Simulation.{% endblock %}
+{% block title %}YESM 2020 | Committee Simulation{% endblock %}
+
+{% block econtent %}
+    {% import 'macros/event_text.njk' as et %}
+    <div style="font-size:65px;font-family:ariel"><br>COMMITTEE SIMULATION</div>
+    <h2>Committee Simulation</h2>
+    <p>YESM 2020 that promises to be themed around Environmental Sustainability this year presents a unique Committee Simulation that has never ever been tried before in the history of the MUN circuit.</p>
+    <p>The Congress of the World Energy Council primarily aims to focus on recommendations that Member States may come up with that would address the lack of consensus with regard to Sustainabile usage of Energy without causing harm to the environment.</p>
+    <p>A 2 day MUN, this promises to be unique to say the least. Stay tuned for more updates on the same.</p>
+    {{ et.gen_btn("https://docs.google.com/forms/d/e/1FAIpQLScepkiY7CURqVSvRcUMiHu1SIIzTFG7RuqqBhDD1HSV53fP6A/viewform?fbclid=IwAR0mbXXdwK6pJjjubhCuoYKK3ixkN40eXSuQ-L2kv2chg3NgacxRblsOsJk") }}
+{% endblock %}

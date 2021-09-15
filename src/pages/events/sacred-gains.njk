@@ -1,0 +1,23 @@
+{% extends "events_layout.njk" %}
+
+{% block edesc %}Flagship event. Sacred Gains.{% endblock %}
+{% block title %}YESM 2020 | Strategize{% endblock %}
+
+{% block econtent %}
+    {% import 'macros/event_text.njk' as et %}
+    <div style="font-size:65px;font-family:ariel"><br>STRATEGIZE</div>
+    <h2>Flagship Event</h2>
+    <p>“Hope is not a strategy.” Vince Lombardi.</p>
+    <p>Set out on a mission to win everything that is there to win. Create your chances, and capitalise on them. This is your opportunity to showcase the master tactician in you, as you connive and conspire to crush your competition and reach the peaks of glory.</p>
+    {{ et.gen_h3("Rules and Eligibility:") }}
+    {{ et.gen_ul([
+        "Each team must consist of either 2 or 3 members.",
+        "The event is open for all but they must be enrolled Undergraduate students under any discipline. Each team must have atleast one participant from Economics discipline.",
+        "Cross-college teams are allowed.",
+        "There is no limit to the number of teams participating from any particular institution.",
+        "Further details shall be given at the venue, prior to the event.."
+    ]) }}
+    {{ et.gen_btn("https://forms.gle/4tEpWw74pUTnzUgk6
+
+") }}
+{% endblock %}

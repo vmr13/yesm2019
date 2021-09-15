@@ -1,0 +1,53 @@
+{% extends 'layout.njk' %}
+
+{% block title %}YESM 2020 | Sponsors{% endblock %}
+{% block desc %}Sponsors of YESM. Young Economist Students' Meet 2019 (YESM 2019). Venue: Jadavpur University. Department of Economics. Designer: Vedant Mozumdar.{% endblock %}
+
+{% block metahead %}
+    <link rel="stylesheet" href="css/sponsor.css">
+    <script src="js/sponsor.js"></script>
+{% endblock %}
+
+{% block content %}
+<body id="sponsor">
+    {% import 'macros/header.njk' as nav %}
+    {{ nav.gen('s') }}
+    <main id="main">
+        <section>
+            <h1>Sponsors</h1>
+            <div>
+                <div class="img-wrap" style="width:180px;height:300px;max-width:600px;max-height:300px;">
+                    <img class="lazy" src="img/sponsors/lcssr.jpg" alt="Hatari">
+                </div>
+                <p>Title Sponsor</p>
+            </div>
+            <div>
+                <div class="img-wrap" style="width:200px;height:250px;max-width:444px;max-height:250px;">
+                    <img class="lazy" src="img/sponsors/WBPDCL%20Logo_Blue%20Colour.jpg" alt="Gafa">
+                </div>
+                <p>Associate Sponsor</p>
+            </div>
+            <div>
+                <div class="img-wrap" style="width:300px;height:250px;">
+                    <img class="lazy" data-src="catalyst.jpeg" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDACgcHiMeGSgjISMtKygwPGRBPDc3PHtYXUlkkYCZlo+AjIqgtObDoKrarYqMyP/L2u71////m8H////6/+b9//j/2wBDASstLTw1PHZBQXb4pYyl+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj/wgARCAAUABgDAREAAhEBAxEB/8QAGAABAQADAAAAAAAAAAAAAAAAAAIBAwT/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAeiRN7NZmFCjAP/EABYQAQEBAAAAAAAAAAAAAAAAAAEAMP/aAAgBAQABBQJYcP/EABYRAAMAAAAAAAAAAAAAAAAAAAARMP/aAAgBAwEBPwEUP//EABcRAAMBAAAAAAAAAAAAAAAAAAABETD/2gAIAQIBAT8Borh//8QAFBABAAAAAAAAAAAAAAAAAAAAMP/aAAgBAQAGPwIf/8QAGRAAAwEBAQAAAAAAAAAAAAAAAAERECEx/9oACAEBAAE/IenBt8xqlgnjQj//2gAMAwEAAgADAAAAEKJFop//xAAZEQEAAgMAAAAAAAAAAAAAAAABABEhMDH/2gAIAQMBAT8QytRAd0f/xAAaEQEAAQUAAAAAAAAAAAAAAAABABARICFR/9oACAECAQE/EGO1E3eBEw//xAAbEAEAAgIDAAAAAAAAAAAAAAABABEQQTFRgf/aAAgBAQABPxBinqJIqu8Gr3LDUZ5wSw1P/9k=" alt="Catalyst Learning Services">
+                </div>
+                <p>Career Partner</p>
+            </div>
+            <div>
+                <div class="img-wrap" style="width:345px;height:213px;">
+                    <img class="lazy" data-src="edusure.png" src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAUCAIAAAEU9JiOAAAAAW9yTlQBz6J3mgAABFRJREFUOE+VVUtPG1cUnjtzPQ+/Xxhh83IS1wTMLtC0UKS2gqZIcaI2u7RSKiGxQ+mvSBfNb2hRkShi06yqsmDdUkFT4e5QI2EEYxuw8QPbM56ZftdjUIQRSq+t0cycc+53zne+c4dUauVqtcrZa+evnXsT9/Avlk7JyuqKIstut0cSJXKUO7RdarUaNzHJfH5c/uG8UaPPv30ei/XnVLVer5PXf79eXFy0OAvOhOMcoijL8traGjUMA/YODMfV641qBagWyRVU0zQvDbixLKvZbJLHXzw+POyAEo44ncrcZ3NLS0vUaLVMoxOB3dfX10VRJITwmqZrF6tcLn/y8acvvnuBDelXXz8NhUKShGLcqnrk9/kBwDLM/JN5+fL7fKHwNv6Ve57np6amnjz50uFwUGZDMkiyK0IUHY/Sj6Y/mhYEqiiyx+NBTpQ6hFAojOS6/DmYd3cz/755A4RUamx2dpYhYM3Nzmq6boO0wToLtLYfEEgivRGE4YEuLy/n8nkUpCgKwkGmx+uNRWO6rmUPDs7Pz31er2lavb29/f0xr9dLToonmsbKv2kRojWbuq6DYPrz6upvGxvo4A0BgUBgYWFhaGiQR/nQyMnxcavVusISskfSoiTh6lQUtDQSiTCWnC5XKBzuRkDA0PDwN8+eoX2CIPh8PnizotHefC4PhCspwRwIBtFmn9/PEyJQwXagsWg0NZ66ojTbBvX8tLJCBYqwh+mHg4MDDGF/f39ne6cb4W3AcDj0wYf3Bwb6WUf++PP348LJRY/gZveKyfnyAVCjY3fBFd4I79+fhIXniWlZaBza53Q6IZvy2Vmj2ZQlye3xQM7Qld/vZyxtb2+jI+COOhySKIKunp6eeDy+m8nUqlXsDf0AbX5+Pj4cZzI9Ug+z2ayaU+uNBkujW7RX6Lv2sS1B7I4skDlusBWaIUkSzWYPfnn1anNzU1VVRtX/BehQRASBR/+np6fT6fTo6F2IDiJH/6jP500mk2ChVCoabOjfBYGAU6fTBXKCyBdqA3k8j02jfX3xW3GXy4Uhs0uFkCp7e3tbW1vXyul6PgiHoySRSIyPj8/MzPRGIpAZIwm/i3UZSL1ez3uJBCo4K5Wuld+1GEgwGApBAyC2Wqm0yeAECom6MAQoxR5+xLJhg1Yzu7uFfKF144x2I/3aztd+jx0DwcDk5MSDB5+PjCSBYZso+Lp1+zZOpPJZ+d0r6AZDV1xud+JOAk2Ffi6BabFUjEb7MKHoErSF2gWeN3Bm4R6OgsB4ZfuxZC3LxBDAijfwwFvMDphhLlC4ZaLhUOolP4yijY2N09OiKImI0fUWCpIVmX1GLEuRFYgP/EqSKEsyjg0cTCC9cFxArfhktVpGIOCHnLA/Jq7Z1HBspcZSyZGkx+1BXxgAphbUY1mmCWTDNCpoWvv7V2/U8VXCqYjTRceMmEZNls8bdWADAInDv6lpsNgp4wpPl7ut0U5ruP8AMdrX9yfYKVYAAAAASUVORK5CYII=" alt="Edusure">
+                </div>
+                <p>Education Sponsor</p>
+            </div>
+            
+            <div>
+                <div class="img-wrap" style="width:299px;height:300px;">
+                    <img class="lazy" src="img/sponsors/Londonloungelogo.jpg" alt="Grissini">
+                </div>
+                <p>Food Sponsor</p>
+            </div>
+           
+        </section>
+    </main>
+</body>
+{% endblock %}

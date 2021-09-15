@@ -1,0 +1,43 @@
+{% extends "events_layout.njk" %}
+
+{% block edesc %}Polemic. Debate.{% endblock %}
+{% block title %}YESM 2020 | Polemic{% endblock %}
+
+{% block econtent %}
+    {% import 'macros/event_text.njk' as et %}
+    <div style="font-size:65px;font-family:ariel"><br>POLEMIC</div>
+    <h2>Debate</h2>
+    <p>Do you love the way an argument springs inside your head and holds you in thrall, every once in a while? Do you construct arguments and wish to speak them out loud in front of an audience that listens in rapt attention to the exquisite reasoning at work? And do you think your ability to reason and argue a case clearly will go on to help you find solutions to some of the most pressing issues of the day?</p>
+    <p>If your answer to each of the above is a yes, we invite you to join us for Polemic where you'll battle it out with your coherent, persuasive arguments and stand witness to many others from colleges across Kolkata do the same. So this January, unleash the Barkha Dutt or Arnab Goswami in you, and debate the issues that affect us all.</p>
+    {{ et.gen_h3("General Rules:") }}
+    {{ et.gen_ul([
+        "Students are to register in teams of two, or individually, via the given link.",
+        "All participants must be school students at the higher secondary level (classes 11 and 12) or enrolled undergraduate or postgraduate students.",
+        "Cross-college teams are allowed.",
+        "In each team, for both the rounds, one contestant will be speaking for the motion, and the other will be speaking against the motion."
+    ]) }}
+    {{ et.gen_h3("Rules for Prelims:") }}
+    {{ et.gen_ul([
+        "Topic will be uploaded on the official Facebook page 24 hours prior to the given time of commencement of the prelims.",
+        "Speaking time for each speaker will be (2+1) minutes.",
+        "Each speaker will have a rebuttal round for 1 minute. The judges, audience, and fellow participant can ask questions during the rebuttal round. There will be marks allotted on the speaker’s responses during the rebuttal round."
+    ]) }}
+    {{ et.gen_h3("Selection Procedure:") }}
+    <p>Students will qualify individually to the finals. If your team member has qualified as well you can continue as a team. In case one member of a team qualifies, they will be paired with other students who have qualified.</p>
+    {{ et.gen_h3("Rules for Finals:") }}
+    {{ et.gen_ul([
+        "Topic will be uploaded on the official Facebook page, and sent to the finalists, ours prior to the given time of commencement of the finals.",
+        "Speaking time for each speaker will be (3+1) minutes.",
+        "Each speaker will have a rebuttal round for 2 minutes. The judge, audience, and fellow participants can ask questions during the rebuttal round. Marks will be allotted on the speaker’s responses during the rebuttal round.",
+        "Speakers will be judged on content, delivery, clarity of expression, and rebuttal.",
+        "Speaker prizes will be awarded individually, and not on team basis."
+    ]) }}
+    <p>NOTE:</p>
+    {{ et.gen_ul([
+        "Speakers are not allowed to read out from a prepared speech on the podium. Facts and figures may be referred to.",
+        "Use of unparliamentary language will lead to disqualification.",
+        "The decision of the judges will be <b>FINAL</b> and cannot be challenged by any participant in any case.",
+        "The decision of the coordinators regarding all aspects of the event, will be final."
+    ]) }}
+    {{ et.gen_btn("https://docs.google.com/forms/d/e/1FAIpQLSeBEFDqmSxrVcBYFtJfDvyCtYW4VY4VSGCfqdpG6ksju1t5AQ/viewform?fbclid=IwAR0fOqsPmudN2lgxm4-HrphiTOsOBE7Ehl1vFqyB8p2z4LN4fz1UCNlwCYQ") }}
+{% endblock %}

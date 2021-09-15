@@ -1,0 +1,124 @@
+{% extends 'layout.njk' %}
+
+{% block title %}YESM 2020{% endblock %}
+{% block desc %}Young Economist Students' Meet 2020 (YESM 2020). Venue: Jadavpur University. Department of Economics. Designer: Vedant Mozumdar.{% endblock %}
+
+{% block metahead %}
+    <link rel="preload" href="/css/index.css" as="style">
+    <link rel="preload" href="/js/index.js" as="script">
+    <link rel="preload" href="/img/logo.svg" as="image">
+    <link rel="preload" href="/img/yesm.jpg" as="image">
+    <link rel="preload" href="/img/theme.jpg" as="image">
+    <link rel="preload" href="/img/dept.jpg" as="image">
+    <link rel="preload" href="/img/previous.jpg" as="image">
+    <link rel="preload" href="/img/instagram.svg" as="image">
+    <link rel="preload" href="/img/facebook.svg" as="image">
+    <link rel="prerender" href="/events">
+
+    <link rel="stylesheet" href="css/index.css">
+    <script type="application/javascript" src="/js/index.js"></script>
+    <style>
+        html, body {
+            height: 100vh;
+            overflow: hidden;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+<body id="home">
+    {% import 'macros/header.njk' as nav %}
+    {{ nav.gen('h') }}
+    <main id="main">
+        <section>
+            <object type="image/svg+xml" id="hero-logo" data="/img/logo.svg" style="max-width:100%; max-height:100%; pointer-events:none;"></object>
+            <div id="hero-text">
+                <h1>Young Economist Students' Meet</h1>
+                <h2>7th, 8th, 9th January, 2020.</h2>
+            </div>
+        </section>
+        <section class="content-wrap">
+            <img src="/img/yesm.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>About YESM</h1>
+                <p>The Young Economist Students’ Meet is an initiative pioneered by the students of the Department of Economics, Jadavpur University. The meet features a number of exciting competitive events for school and college students to participate in, along with guest lectures and panel discussions, by eminent scholars and academicians. At YESM, students explore uncharted territories- both creative and academic, in the study and application of Economics.</p>
+            </div>
+        </section>
+        <section class="content-wrap">
+            <img src="/img/theme1.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Theme</h1>
+                <p>With environment being one of the most serious concerns, we have chosen our Theme to be<b> Green Economy: Role of Public Policy in Environmental Security</b>.</p>
+
+
+<p>We seem to be living in a time of more extreme events, and environmental security is one of the most important issues. This January, we are trying to understand how the changing environment affects the economy of the nation and how appropriate public policies should be taken to combat the environmental threats. 
+We don't know exactly what the future is going to look like, but it will be different than where we are today. Now it is on us to decide how do we want it to be.</p>
+            </div>
+        </section>
+        <section class="content-wrap">
+            <img src="/img/dept.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Department of Economics</h1>
+                <p>The Department of Economics, Jadavpur University, is recognised nationwide for its excellence in teaching and prospective research activities. Prof. Amartya Sen, the noted Welfare Economist and Nobel Laureate began his career here, as a teacher and a research scholar. Established in the year 1956, the department has consistently impressed the University Grants Commission with its teaching and research activities in various fields of economics. In 2005, the Department became the 4th Centre of Advanced Studies (CAS) in Economics in India.</p>
+            </div>
+        </section>
+        <section class="content-wrap">
+            <img src="/img/previous.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Previous Editions</h1>
+                <p>At YESM, we aim to discuss economic issues that are interesting and pertinent at the moment to India and the world. Since its inception in 2007, YESM has seen discussions on a number of diverse and challenging topics, and has hosted many distinguished figures from both academia and industry.</p>
+                {# <a href="/previous-edition" style="padding: 0.5em 1em; font-size: 1.3rem;">DISCOVER</a> #}
+            </div>
+        </section>
+        <section>
+            <div class="content">
+                <h1>Contact Us</h1>
+                <p>188, Raja Subodh Chandra Mallick Road, <br /> Jadavpur, Kolkata - 700032.</p>
+                <table style="text-align: left; border-spacing: 10px 5px;">
+                    <tr>
+                        <td>Arka Banerjee:</td>
+                        <td><a href="tel:+919831670956">(+91) 9831-670-956</a></td>
+                    </tr>
+                    <tr>
+                        <td>Anushka Ghosh Ray:</td>
+                        <td><a href="tel:+918621013928">(+91) 8621-013-928</a></td>
+                    </tr>
+                    <tr>
+                        <td>Shuvam Das:</td>
+                        <td><a href="tel:+919051664744">(+91) 9051-664-744</a></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><a class="underline" href="mailto:ocyesm2020@gmail.com">contactus@yesm.in</a></td>
+                    </tr>
+                    <tr>
+                        <td>Follow Us:</td>
+                        <td><a class="icon" href="https://www.facebook.com/yesm2020/" target="_blank" rel="noopener"><img src="/img/facebook.svg" alt="YESM facebook page"></a> <a class="icon" href="https://www.instagram.com/yesm2020/" target="_blank" rel="noopener"><img src="/img/instagram.svg" alt="YESM instagram page"></a></td>
+                    </tr>
+                </table>
+                <p></p>
+                <div style="font-size: 1rem;">
+                    <p>Designed and developed by <u><a href="https://www.vedantmozumdar.in/">Vedant Mozumdar.</a></u></p>
+                    <p>Department of Economics, Jadavpur University<br />2019-20. All rights reserved.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <noscript>
+        <style>
+            html, body {
+                height: auto;
+                overflow: auto;
+            }
+            #hero-text {
+                opacity: 1;
+                transform: none;
+            }
+        </style>
+    </noscript>
+</body>
+{% endblock %}

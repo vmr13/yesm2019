@@ -1,0 +1,15 @@
+{% macro gen(link, name, desc, vb_w, vb_h, fill, ivb_w, ivb_h, iname) %}
+<article>
+    <a href="/events/{{link}}">
+        <svg style="display:block;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {{vb_w}} {{vb_h}}"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <use xlink:href="/img/fig.svg#bg" fill="#{{fill}}" />
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="200" y="460" viewBox="0 0 {{ivb_w}} {{ivb_h}}">
+                <use xlink:href="/img/eventnames.svg#{{iname}}" fill="#fff"/>
+            </svg>
+        </svg>
+        <h1 class="d_none">{{name}}</h1>
+        <h2>{{desc | safe}}</h2>
+    </a>
+</article>
+{% endmacro %}

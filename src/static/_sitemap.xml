@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://yesm.in/</loc>
+  <lastmod>2018-12-12T17:18:58+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://yesm.in/coming-soon</loc>
+  <lastmod>2018-12-12T17:18:58+00:00</lastmod>
+  <priority>0.20</priority>
+</url>
+<url>
+  <loc>https://yesm.in/events/</loc>
+  <lastmod>2018-12-12T17:18:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yesm.in/events/polemic</loc>
+  <lastmod>2018-12-12T17:18:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yesm.in/events/analyse-this</loc>
+  <lastmod>2018-12-12T17:18:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yesm.in/events/ecowhizz</loc>
+  <lastmod>2018-12-12T17:18:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yesm.in/events/bulls-and-bears</loc>
+  <lastmod>2018-12-12T17:18:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yesm.in/events/quest-o-nomics</loc>
+  <lastmod>2018-12-12T17:18:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yesm.in/events/paper-trail</loc>
+  <lastmod>2018-12-12T17:18:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yesm.in/events/proffing-it</loc>
+  <lastmod>2018-12-12T17:18:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yesm.in/events/write-on</loc>
+  <lastmod>2018-12-12T17:18:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yesm.in/events/artbitrage</loc>
+  <lastmod>2018-12-12T17:18:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yesm.in/events/shutter-up</loc>
+  <lastmod>2018-12-12T17:18:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://yesm.in/events/ecolens</loc>
+  <lastmod>2018-12-12T17:18:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+</urlset>
